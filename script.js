@@ -79,7 +79,7 @@ async function getDataFromGoogleVisionAi(url) {
 
     try {
         console.log("Getting image data...")
-        const response = await fetch("https://6711-43-231-237-194.ngrok-free.app/api/google_vision_text", {
+        const response = await fetch("http://103.120.176.96:49952/api/google_vision_text", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -106,7 +106,7 @@ async function getDataFromGemini(data) {
 
     try {
         console.log("Getting Organized data...")
-        const response = await fetch("https://6711-43-231-237-194.ngrok-free.app/api/gemini_text", {
+        const response = await fetch("http://103.120.176.96:49952/api/gemini_text", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
